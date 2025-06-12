@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  background-color: #0E0E0E;
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
+}
+
+
+.messages {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 30px 20px;
+  width: 100%;
+  height: auto;
+}
+
+
+@media screen and (min-width: 768px) {
+  .messages {
+    padding: 30px 80px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .messages {
+    padding: 30px 200px;
+  }
+}
+
+
+.userMsg,
+.responseMsg {
+  padding: 14px 20px;
+  border-radius: 20px;
+  max-width: 75%;
+  font-size: 15px;
+  line-height: 1.5;
+  word-wrap: break-word;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.userMsg {
+  align-self: flex-end;
+  background: linear-gradient(135deg, #00b09b, #96c93d);
+  color: #fff;
+}
+
+
+.responseMsg {
+  align-self: flex-start;
+  background: #1a1a1a;
+  color: #e0e0e0;
+  border: 1px solid #333;
+}
+
+.userMsg:hover,
+.responseMsg:hover {
+  transform: scale(1.02);
+}
