@@ -4,7 +4,7 @@ import { PiPlanetLight } from 'react-icons/pi';
 import { TbBrandPython, TbMessageChatbot } from 'react-icons/tb';
 import { GoogleGenAI } from "@google/genai";
 
-const ai = new GoogleGenAI({ apiKey: "AIzaSyCFWOmv0Qo_E91lSiD1RajFIMpg3LL6uH8" });
+const ai = new GoogleGenAI({ apiKey: "Enter your Api" });
 
 const App = () => {
   const [message, setMessage] = useState("");
