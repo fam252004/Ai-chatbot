@@ -45,7 +45,7 @@ const App = () => {
       });
 
       const data = await response.json();
-      const responseText = data.choices?.[0]?.message?.content || "No response from AI.";
+      const responseText = data.choices?.[0]?.message?.content || "No response from AI.GEN AI API Key Expired";
       setMessages(prev => [...prev, { type: "responseMsg", text: responseText }]);
     } catch (error) {
       setMessages(prev => [...prev, { type: "responseMsg", text: "⚠️ Something went wrong. Try again." }]);
